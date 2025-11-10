@@ -431,11 +431,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "NEW 7486_0_1"
-			(arc
-				(start 5.08 5.588)
-				(mid 1.27 4.0098)
-				(end -2.54 5.588)
+		(symbol "NEW 7486_1_1"
+			(rectangle
+				(start -12.7 7.62)
+				(end 12.7 -7.62)
 				(stroke
 					(width 0)
 					(type default)
@@ -444,85 +443,28 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "NEW 7486_1_1"
-			(polyline
-				(pts
-					(xy -2.54 4.318) (xy -2.54 1.143)
+			(pin power_in line
+				(at -12.7 0 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(arc
-				(start 5.08 1.1176)
-				(mid 3.8624 -1.6848)
-				(end 1.27 -3.302)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(arc
-				(start 5.08 4.318)
-				(mid 1.27 3.097)
-				(end -2.54 4.318)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 1.27 -3.302)
-				(mid -1.314 -1.6775)
-				(end -2.54 1.1176)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 4.318) (xy 5.08 1.143)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 1.143) (xy 5.08 4.318) (xy 5.08 4.318) (xy 4.6736 4.064) (xy 3.5306 3.5306) (xy 2.3114 3.2004)
-					(xy 1.016 3.1242) (xy -0.2286 3.2766) (xy -1.4478 3.683) (xy -2.54 4.318) (xy -2.54 4.318) (xy -2.54 1.143)
-				)
-				(stroke
-					(width -25.4)
-					(type default)
-				)
-				(fill
-					(type background)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
 				)
 			)
 			(pin input line
-				(at -1.27 11.43 270)
-				(length 7.62)
-				(name "~"
+				(at -10.16 7.62 90)
+				(length 2.54)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -537,10 +479,28 @@
 					)
 				)
 			)
+			(pin input line
+				(at -7.62 7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
-				(at 1.27 -11.43 90)
-				(length 8.128)
-				(name "~"
+				(at -7.62 -7.62 90)
+				(length 2.54)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -556,16 +516,178 @@
 				)
 			)
 			(pin input line
-				(at 3.81 11.43 270)
-				(length 7.62)
-				(name "~"
+				(at -3.81 7.62 90)
+				(length 2.54)
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -2.54 -7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -1.27 7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 2.54 7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 2.54 -7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 5.08 7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 -7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 11.43 7.62 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 12.7 0 0)
+				(length 2.54)
+				(name "Vcc"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
 					(effects
 						(font
 							(size 1.27 1.27)
